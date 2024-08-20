@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authentication Response</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get('status');
+      const uid = params.get('uid');
+      const name = params.get('name');
+      const email = params.get('email');
+      const message = params.get('message');
+      const responseMessage = document.getElementById('responseMessage');
+
+      if (status === 'success') {
+        responseMessage.innerHTML = `
+          <p>Authentication successful!</p>
+          <p>Name: ${name}</p>
+          <p>Email: ${email}</p>
+        `;
+        responseMessage.style.color = 'green';
+      } else if (status === 'failure') {
+        responseMessage.innerHTML = `<p>Authentication failed: ${message}</p>`;
+        responseMessage.style.color = 'red';
+      } else {
+        responseMessage.innerHTML = `<p>Unexpected status. Please try again.</p>`;
+        responseMessage.style.color = 'orange';
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Authentication Response</h1>
+  <div id="responseMessage"></div> <!-- Element to display the response -->
+</body>
+</html>
