@@ -93,8 +93,7 @@
 <body>
     <div class="min-h-screen  flex flex-col-reverse md:flex-col justify-center">
         <div class="max-w-screen-xl m-0 bg-white shadow sm:rounded-lg flex flex-col-reverse justify-center lg:flex-row m-auto">
-            <!-- <div class="min-h-screen text-gray-900 flex flex-col-reverse md:flex-col justify-center ">
-    <div class="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1b "> -->
+         
             <div class="flex-1 w-screen  text-center lg:flex bg-leftBg">
                 <div class="relative flex flex-col items-center w-full pt-6 px-0 pb-0">
                     <!-- Logo Section -->
@@ -103,7 +102,7 @@
                     </div>
 
                     <!-- Content Padding to Avoid Overlap -->
-                    <div class="pt-24 w-full flex flex-col items-center lg:mt-16 font-manrope lg:mt-16 lg:items-center">
+                    <div class="pt-24 w-full flex flex-col items-center lg:mt-16 font-manrope lg:mt-16 lg:items-center px-5">
                         <!-- Existing Boxes in Row -->
                         <div class="grid grid-cols-2 lg:flex lg:flex-row justify-center items-center gap-6 mb-8">
                             <!-- Settings Icon -->
@@ -143,7 +142,7 @@
                                 <!-- Point 1 -->
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-check"
-                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;"></i>
+                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px; padding: 0.8rem"></i>
                                     <!-- Reduced font size -->
                                     <span class="font-manrope font-normal font-lg">Integrates seamlessly into existing
                                         architecture</span>
@@ -151,28 +150,28 @@
                                 <!-- Point 2 -->
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-check"
-                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;"></i>
+                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;  padding: 0.8rem"></i>
                                     <!-- Reduced font size -->
                                     <span class="font-manrope font-normal font-lg">Compatible with most platforms</span>
                                 </li>
                                 <!-- Point 3 -->
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-check"
-                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;"></i>
+                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;  padding: 0.8rem"></i>
                                     <!-- Reduced font size -->
                                     <span class="font-manrope font-normal font-lg">Numbers Porting</span>
                                 </li>
                                 <!-- Point 4 -->
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-check"
-                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;"></i>
+                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;  padding: 0.8rem"></i>
                                     <!-- Reduced font size -->
                                     <span class="font-manrope font-normal font-lg">Easy integration with FreePBX</span>
                                 </li>
                                 <!-- Point 5 -->
                                 <li class="flex items-start gap-3">
                                     <i class="fa-solid fa-check"
-                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;"></i>
+                                        style="color: #fff; display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 6px; background-color: #43abd8; font-size: 12px;  padding: 0.8rem"></i>
                                     <!-- Reduced font size -->
                                     <span class="font-manrope font-normal font-lg">Cloud-based local toll-free numbers
                                         globally</span>
@@ -182,10 +181,14 @@
                     </div>
 
                     <!-- Trusted By Section -->
-                    <div class="lg:absolute relative  bottom-0 left-0 w-full bg-black text-center lg:py-6 p-10 ">
+                    <div class="relative bottom-0 left-0 w-full bg-black text-center lg:py-6 p-10">
                         <p class="text-white text-lg mb-4 font-manrope font-bold text-base">TRUSTED BY</p>
-                        <img src="./footer.png" alt="Trusted By" class="mx-auto max-w-full">
+                        <!-- Image shown on medium screens and larger -->
+                        <img src="./footer.png" alt="Trusted By" class="hidden md:block mx-auto max-w-full">
+                        <!-- Image shown on screens smaller than medium -->
+                        <img src="./footer2.png" alt="Trusted By" class="block md:hidden mx-auto max-w-full">
                     </div>
+                    
                 </div>
             </div>
 
@@ -246,7 +249,7 @@
                     </div>
                 </div>
                 <div class="md:hidden flex justify-center ">
-                    <img src="./small-logo.png" class="w-1/4 h-1/4" alt="">
+                    <img src="./logo2.jpg" class="w-1/4 h-1/4" alt="">
                 </div>
 
                 <div class="mt-12 flex flex-col md:items-left">
@@ -261,7 +264,7 @@
 
                         <div class="mt-0 mb-4 text-left">
                             <div
-                                class=" hidden md:block inline-block text-sm text-black font-manrope font-light bg-white transform translate-y-1/2">
+                                class=" hidden md:block inline-block text-sm text-black font-manrope  bg-white transform translate-y-1/2">
                                 Already have an account? <a href="" class="border-b font-bold">Log in</a>
                             </div>
                         </div>
@@ -304,7 +307,7 @@
                             <div class="my-4 border-b text-center">
                                 <div
                                     class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
-                                    or
+                                    or sign up with 
                                 </div>
                             </div>
                             <!-- hidden on small screen -->
